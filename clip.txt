@@ -1,0 +1,6 @@
+Moments the clip must show (ticked only when seen in the preview screenshots):
+[x] 1. Night 1 starts in the dark chamber: vignette, flashlight beam, clock and power meter, Freddy and Bonnie (turret-built animatronics) awaken and glow in the dark.
+[x] 2. Look away and they creep closer, stare at them and they freeze (caption + positions change between shots).  (weak: the flee-from-the-light step is quick)
+[x] 3. Cubes thrown at an animatronic hit it: red flash, sparks, health bar, and it is scrapped when its health runs out.
+[x] 4. A real Portal 2 portal pair opens: an animatronic steps in and comes out of the other portal.
+[x] 5. Jumpscare: full-screen Foxy/Chica/Freddy face with scream and screen shake; battery dies, 6 AM chime, Night 2 begins.

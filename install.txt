@@ -1,0 +1,1 @@
+Put the mod folder (scripts, sound, materials) together with the kit's scripts folder into one Portal 2 mod folder. Start Portal 2 with -game and that folder plus +sv_cheats 1, load a test chamber and survive until 6 AM with your flashlight.
