@@ -1,0 +1,255 @@
+{
+  "id": "sigf/portal2-five-nights-at-freddy-s-takeover",
+  "version": "1.0.0",
+  "name": "Five Nights at Freddy's Takeover",
+  "tagline": "Bring Five Nights at Freddy's into the game in the most visible and funny way. The change shows in the first 30 seconds of play.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "portal2",
+      "role": "host",
+      "engine": "Portal 2 (Source, 32 bits) + VScript (Squirrel 2.2)",
+      "apps": {
+        "steam": "620"
+      }
+    },
+    {
+      "game": "fivenightsatfreddys",
+      "role": "guest",
+      "label": "Five Nights at Freddy's",
+      "canonical": false
+    }
+  ],
+  "requires": [],
+  "install": [
+    {
+      "game": "portal2",
+      "strategy": "args",
+      "files": [
+        {
+          "src": "portal2-five-nights-at-freddy-s-takeover.zip",
+          "dst": "{game}/sigf_five_nights_at_freddy_s_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "materials/sigf/scare_bonnie.vmt",
+              "sha256": "8797920caed11d7d5a4400ff985d4a7e68effdefee524c92d8ea82f6e33d4fe1"
+            },
+            {
+              "path": "materials/sigf/scare_bonnie.vtf",
+              "sha256": "da96e64f1f1988d7d82a1ad3731520e69d9902925f8bd67beb75e42f0992d56b"
+            },
+            {
+              "path": "materials/sigf/scare_chica.vmt",
+              "sha256": "2bc782765f454566f31e999d6f2a2ef62607b69ce6a5fab81a264611b7fb8cd9"
+            },
+            {
+              "path": "materials/sigf/scare_chica.vtf",
+              "sha256": "223d5a70f2547d57c8086ad3bcaea2345de0672b1d2d8f90600bbf193d8015da"
+            },
+            {
+              "path": "materials/sigf/scare_foxy.vmt",
+              "sha256": "90a184ac629de3244fb81c55721897057e43eb1ed2791ff58bcf0951ddf8807e"
+            },
+            {
+              "path": "materials/sigf/scare_foxy.vtf",
+              "sha256": "c29792f404fba658a73ec9f02c06a8f8663e1d2c86250c4a6d81419e3ce9ccf0"
+            },
+            {
+              "path": "materials/sigf/scare_freddy.vmt",
+              "sha256": "75eada2667abb5859850158bd4040266ada1fdce4433dfd28f9790e47254a53e"
+            },
+            {
+              "path": "materials/sigf/scare_freddy.vtf",
+              "sha256": "1ce0d3e5ac221a82dcd5735716de1ad675fc307c5be4319943e2fd4420c113e1"
+            },
+            {
+              "path": "materials/sigf/staticfx.vmt",
+              "sha256": "ad7df20bf70d6af122c7fe20fee615504da3b37d32d3cd7a137b206d4b4dfb22"
+            },
+            {
+              "path": "materials/sigf/staticfx.vtf",
+              "sha256": "d765197634bf0d9673aea2bc070b0e0ea6a5963fb9d583c74b75a7602883307f"
+            },
+            {
+              "path": "materials/sigf/vignette.vmt",
+              "sha256": "81a72d0025e638eb801a4e39e16e36881e4a2255154e01ae2c1bbfe32dc61905"
+            },
+            {
+              "path": "materials/sigf/vignette.vtf",
+              "sha256": "0eee2ce590f2378c126a81aa21685ee70e92e68e61a876b9dcd616b39dc324a4"
+            },
+            {
+              "path": "scripts/vscripts/sigf_demo.nut",
+              "sha256": "8df27d4b9d283946761524033f634e056eff04abd4f41e6b62e02a66fc01248d"
+            },
+            {
+              "path": "scripts/vscripts/sigf_mod.nut",
+              "sha256": "f8743f6a86e424f6ae3b5dd0d0eb7d42c7722a9e75bf5d3032c3081c7d75efee"
+            },
+            {
+              "path": "sound/sigf/chime.wav",
+              "sha256": "d924159b1767d7f9af36a9914d496f2f7478468dae79bed4a01830e88fb0cc22"
+            },
+            {
+              "path": "sound/sigf/clang.wav",
+              "sha256": "6f0f2aadb453a1dccdc2ff4e9e6007dafa61276264a378a3bf12a227896c8a9c"
+            },
+            {
+              "path": "sound/sigf/flick.wav",
+              "sha256": "a20db4692ac0db3f3d21274ca7f2766e2a47569268a1cf7d4a0ba446f126a909"
+            },
+            {
+              "path": "sound/sigf/musicbox.wav",
+              "sha256": "c35f6b859cd4be730d3d544de4bd0a4594e799e1b71d13b4424ef3b418d39b6f"
+            },
+            {
+              "path": "sound/sigf/pain.wav",
+              "sha256": "eb029eeb513aea1d036f15df7a55f894d7b1d48a7db127c9fc31070fda12bf59"
+            },
+            {
+              "path": "sound/sigf/phone.wav",
+              "sha256": "bf76a682378780ca52f460806bd45e249dc8bc0b198d02bede4e6cbc8f0f4cac"
+            },
+            {
+              "path": "sound/sigf/phoneguy.wav",
+              "sha256": "f82cfbfbf380b47d65652486888b2345b66b60187d70f21eb0187d06acff495c"
+            },
+            {
+              "path": "sound/sigf/poweroff.wav",
+              "sha256": "1335fc16b7348e7c747d132f83a2e63fb6bd826a620576df582f43ac382e9edf"
+            },
+            {
+              "path": "sound/sigf/scream.wav",
+              "sha256": "b365ac0ec7997d1e3a622838919bf2302dd618c120000d2e5769f979f55425e3"
+            },
+            {
+              "path": "sound/sigf/staticburst.wav",
+              "sha256": "2b16c789fb78f8179cb10317fd81a452716835648429be0cf3cb3d5988c2600f"
+            },
+            {
+              "path": "sound/sigf/thump.wav",
+              "sha256": "62d492fe410cd747dbea16f7a5d19303a360bef9b1bd49812949b94cc03b69f0"
+            },
+            {
+              "path": "sound/sigf/wake.wav",
+              "sha256": "1c971d937f530b21c09f33b902597d3de9ec2a5be09a7141256b467c01e365a4"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/portal2-five-nights-at-freddy-s-takeover/releases/download/v1.0.0/portal2-five-nights-at-freddy-s-takeover.zip",
+          "sha256": "bdac22844ab91d651d28aa6ada7b6a85b6caf8b5d657cd7a501a9c2f2d2ca1fb",
+          "size": 8552868
+        },
+        {
+          "src": "portal2-five-nights-at-freddy-s-takeover-game-kit.zip",
+          "dst": "{game}/sigf_five_nights_at_freddy_s_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "cfg/sigf_game.cfg",
+              "sha256": "646e1adf53ef90b3a0939de5d756e66face5610db42b4c644ba5fb934833f7dd"
+            },
+            {
+              "path": "cfg/sigf_rec.cfg",
+              "sha256": "e7815e54ae79bbb159a36435022750280ad2992ece2c2a9b570c6ff4db184cca"
+            },
+            {
+              "path": "gameinfo.txt",
+              "sha256": "509c58bbd5a477768b3e34f3a6dba6d9d6e7507715bb72606b841872e73f2539"
+            },
+            {
+              "path": "materials/sigf/kit_portal_blue.vmt",
+              "sha256": "b5b5a1f62c170477fdf0cb523b21c3da397a85b0cad470e2e8e90a61763200f4"
+            },
+            {
+              "path": "materials/sigf/kit_portal_blue.vtf",
+              "sha256": "66a14c89c2fa080aea7953d6d741f55025f339416b713aaafadd5f54d15a7ecf"
+            },
+            {
+              "path": "materials/sigf/kit_portal_orange.vmt",
+              "sha256": "d745e5b8629577b7ece072a1135cda1edbd9562c364e2641d45599b58853c45a"
+            },
+            {
+              "path": "materials/sigf/kit_portal_orange.vtf",
+              "sha256": "8b87f69add0d1849d8bdc06d5e1135531517150a0173d44bdefb7e293c7c9358"
+            },
+            {
+              "path": "resource/sigf_english.txt",
+              "sha256": "db9d089c49f2842fee5877937467880c952dd4fc9cf2a26dae57b701073307ad"
+            },
+            {
+              "path": "scripts/vscripts/mapspawn.nut",
+              "sha256": "0a1139812204d68668448646e5fd2e5b931e1ddaa680c46cb132c864decd33d2"
+            },
+            {
+              "path": "scripts/vscripts/sigf_bricks.nut",
+              "sha256": "9ea767e17b5763f798b4ae2b0d4df19db1c2413e7cb30f527202829d8d6edfd8"
+            },
+            {
+              "path": "scripts/vscripts/sigf_idle.nut",
+              "sha256": "058ebd51ad50186353a76e92c22edc3adfdca80e2d93cc2f5c8b4234c7e0defc"
+            },
+            {
+              "path": "scripts/vscripts/sigf_lib.nut",
+              "sha256": "05dd16f6c6c6ba2ff731f3a7c5ab86f5f772bf9f47bcf7615b95b9474ec53175"
+            },
+            {
+              "path": "scripts/vscripts/sigf_mode.nut",
+              "sha256": "b2f2524f92d28a7bcc12921baebee0ad449e36db7cd9d8ff8d6de6ff57591beb"
+            },
+            {
+              "path": "scripts/vscripts/sigf_stage.nut",
+              "sha256": "6c9e841b49c906bd8b44608d30d054d07371995dfc1b03f0a593635b174e59f4"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/portal2-five-nights-at-freddy-s-takeover/releases/download/v1.0.0/portal2-five-nights-at-freddy-s-takeover-game-kit.zip",
+          "sha256": "5dc271e1076ac2ee06cc0d99c251e9475a6120771c814784f0462d28e3e1ef0d",
+          "size": 50734
+        }
+      ]
+    }
+  ],
+  "launch": [
+    {
+      "game": "portal2",
+      "args": [
+        "-game",
+        "sigf_five_nights_at_freddy_s_takeover"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "portal2-five-nights-at-freddy-s-takeover.zip",
+      "url": "https://github.com/SIGFAI/portal2-five-nights-at-freddy-s-takeover/releases/download/v1.0.0/portal2-five-nights-at-freddy-s-takeover.zip",
+      "sha256": "bdac22844ab91d651d28aa6ada7b6a85b6caf8b5d657cd7a501a9c2f2d2ca1fb",
+      "size": 8552868
+    },
+    {
+      "name": "portal2-five-nights-at-freddy-s-takeover-game-kit.zip",
+      "url": "https://github.com/SIGFAI/portal2-five-nights-at-freddy-s-takeover/releases/download/v1.0.0/portal2-five-nights-at-freddy-s-takeover-game-kit.zip",
+      "sha256": "5dc271e1076ac2ee06cc0d99c251e9475a6120771c814784f0462d28e3e1ef0d",
+      "size": 50734
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/portal2-five-nights-at-freddy-s-takeover",
+    "license": "MIT"
+  },
+  "media": {
+    "clip": "https://sigf.ai/clips/2026-10-07-32d30d5a.mp4"
+  },
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "portal2",
+    "status": "draft"
+  },
+  "built_at": "2026-10-07T06:32:32.992Z",
+  "notes": [
+    "Put the mod folder (scripts, sound, materials) together with the kit's scripts folder into one Portal 2 mod folder. Start Portal 2 with -game and that folder plus +sv_cheats 1, load a test chamber and survive until 6 AM with your flashlight."
+  ]
+}
